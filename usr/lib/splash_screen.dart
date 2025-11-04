@@ -1,4 +1,4 @@
-import "package:couldai_user_app/screens/login_screen.dart";
+import "package:couldai_user_app/home_screen.dart";
 import "package:flutter/material.dart";
 import "package:flutter/services.dart";
 
@@ -20,7 +20,7 @@ class _SplashScreenState extends State<SplashScreen> {
   _navigateToHome() async {
     await Future.delayed(const Duration(milliseconds: 3000), () {});
     Navigator.pushReplacement(
-        context, MaterialPageRoute(builder: (context) => const LoginScreen()));
+        context, MaterialPageRoute(builder: (context) => const HomeScreen()));
   }
 
   @override
