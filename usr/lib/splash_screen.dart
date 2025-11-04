@@ -1,6 +1,6 @@
-import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
-import 'home_screen.dart';
+import "package:couldai_user_app/screens/login_screen.dart";
+import "package:flutter/material.dart";
+import "package:flutter/services.dart";
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -20,7 +20,7 @@ class _SplashScreenState extends State<SplashScreen> {
   _navigateToHome() async {
     await Future.delayed(const Duration(milliseconds: 3000), () {});
     Navigator.pushReplacement(
-        context, MaterialPageRoute(builder: (context) => const HomeScreen()));
+        context, MaterialPageRoute(builder: (context) => const LoginScreen()));
   }
 
   @override
@@ -43,7 +43,7 @@ class _SplashScreenState extends State<SplashScreen> {
         ),
         child: const Center(
           child: Text(
-            'B2B Connect',
+            "B2B Connect",
             style: TextStyle(
               fontSize: 32,
               fontWeight: FontWeight.bold,
